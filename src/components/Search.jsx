@@ -9,7 +9,11 @@ function Search() {
     
     const submitHandler = (e) => {
       e.preventDefault();
-      navigate("/searched/"+ input);   
+      if (!input.trim()) { 
+        alert("Please enter an ingredient"); 
+      } else {
+        navigate("/searched/"+ input);
+      }  
     };
 
   return (

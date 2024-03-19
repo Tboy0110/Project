@@ -1,5 +1,5 @@
 import {FaPizzaSlice} from 'react-icons/fa';
-import {GiNoodles, GiFrenchFries, GiCroissant, GiNachos} from 'react-icons/gi';
+import {GiNoodles, GiFrenchFries, GiCroissant, GiNachos, GiCorn, GiAfrica} from 'react-icons/gi';
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 
@@ -25,6 +25,14 @@ function Cuisine() {
         <SLink to={'/cuisines/Spanish'}>
             <GiNachos/>
             <h4>Spanish</h4>
+        </SLink>
+        <SLink to={'/cuisines/Caribbean'}>
+            <GiCorn/>
+            <h4>Caribbean</h4>
+        </SLink>
+        <SLink to={'/cuisines/African'}>
+            <GiAfrica/>
+            <h4>African</h4>
         </SLink>
     </Options>
   );

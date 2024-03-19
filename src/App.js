@@ -5,6 +5,7 @@ import Search from "./components/Search";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { GiMagicLamp } from "react-icons/gi";
+import CuisineBottom from "./components/CuisineBottom";
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Search />
       <Cuisine/>
       <Pages/>
+      <h3 style={{ textDecoration: 'underline', textAlign: 'center', fontSize: '2rem' }}>Additional Cuisines</h3>
+      <CuisineBottom/>
       </BrowserRouter>
     </div>
   );
